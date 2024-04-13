@@ -1,0 +1,139 @@
+@import '../../responsive.scss';
+
+.arbeitsJobBannerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding:2rem;
+    @include sm{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 20rem;
+        @include sm{
+            height: 10%;
+            width: 20rem;
+        }
+        cursor: pointer;
+      .imageContainer{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        height: 20rem;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .textContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            width: 100%;
+            height: 100%;
+            h2{
+                font-size: 2.5rem;
+                @include md{
+                    font-size: 1.5rem;
+                }
+                &:hover{
+                    padding: 1rem;
+                    border: .15rem solid #fff;
+                    background-color: #c50303;
+                    border-radius: .5rem;
+                    transition: all .5s ease-in-out;
+                    
+                    @include sm{  
+                        font-size: 1.25rem;
+                        &:hover{
+                            padding: 1rem;
+                            border: none;
+                            background-color: red;
+                            border-radius: .5rem;
+                            transition: all .5s ease-in-out;
+                           
+                        }
+                        
+                    }
+                }
+            }
+          }
+      }
+        
+    }
+   .right{
+    width: 100%;
+    height: 20rem;
+        cursor: pointer;
+        @include sm{
+            height: 10%;
+            width: 20rem;
+        }
+    .imageContainer{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        height: 20rem;
+    
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .textContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            width: 100%;
+            height: 100%;
+            h2{
+                font-size: 2.5rem;
+                @include md{
+                    font-size: 1.5rem;
+                }
+                &:hover{
+                    padding: 1rem;
+                    border: .15rem solid #fff;
+                    background-color: #c50303;
+                    border-radius: .5rem;
+                    transition: all .5s ease-in-out;
+                    
+                    @include sm{  
+                        font-size: 1.25rem;
+                        &:hover{
+                            padding: 1rem;
+                            border: none;
+                            background-color: red;
+                            border-radius: .5rem;
+                            transition: all .5s ease-in-out;
+                           
+                        }
+                        
+                    }
+                }
+            }
+          }
+      }
+    }
+
+}

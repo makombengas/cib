@@ -1,0 +1,275 @@
+@import "../../responsive.scss";
+
+.contactContainer{
+width: 100%;
+    .topBanner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 15%;
+            @include sm{
+              height: 15rem;
+              width: 100%;
+              object-position: 10% -50%;
+            }
+        }
+        .bannerImage{
+            background: rgb(3,13,88);
+            background: linear-gradient(90deg, rgba(3,13,88,0.7287115529805672) 0%, rgba(1,10,84,0.695098107602416) 55%, rgba(159,0,0,0.19089642693014708) 100%);
+            z-index: 10;
+            height: 20rem;
+            width: 100%;
+            position: absolute;
+          top: 0%;
+          color: #fff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include sm{
+            height: 15rem;
+            width: 100%;
+          }
+  
+          h1{
+              position: relative;
+              top: 3rem;
+              font-size: 3rem;
+              text-transform: uppercase;
+              text-align: center;
+              @include sm{
+                font-size: 1.5rem;
+              }
+          
+            }
+       
+        }
+      }
+
+    .topContact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 12rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        @include xxl{
+            padding: 5rem 6rem;
+            gap: 1rem;
+           
+        }
+        @include xl{
+            padding: 5rem 4rem;
+            gap: 1rem;
+           
+        }
+        @include md{
+            padding: 5rem 2rem; 
+        }
+        @include sm{
+         flex-direction: column;
+         padding: 2rem; 
+        }
+        .contactIcon{
+            font-size: 2.5rem;
+            @include xl{
+                font-size: 2rem;
+               
+            }
+          
+        }
+        .phone{
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            gap: 1rem;
+            @include sm{
+               align-items: center;
+               padding: 1rem;
+               }
+
+            h2{
+                font-size: 2.5rem;
+                @include xxl{
+                   font-size: 2rem;  
+                }
+
+                @include md{
+                    font-size: 1.5rem;
+                }
+
+            }
+            span{
+                font-size: 1.25rem;
+                font-weight: 300;
+                @include md{
+                    font-size: 1.15rem;
+                }
+                @include sm{
+                    text-align: center;
+                }
+            }
+        }
+        .email{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            @include sm{
+                align-items: center;
+                padding: 1rem;
+            }
+            
+            h2{
+                font-size: 2.5rem;
+                @include xxl{
+                   font-size: 2rem;  
+                }
+
+                @include md{
+                    font-size: 1.5rem;
+                }
+
+            }
+            span{
+                font-size: 1.25rem;
+                font-weight: 300;
+                @include md{
+                    font-size: 1.15rem;
+                }
+                @include sm{
+                    text-align: center;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+                @include md{
+                    font-size: 1.15rem;
+                } 
+                @include sm{
+                    text-align: center;
+                }  
+            }
+            
+        }
+        .location{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1rem;
+            @include sm{
+                align-items: center;
+                padding: 1rem;
+            }
+            h2{
+                font-size: 2.5rem;
+                @include xxl{
+                   font-size: 2rem;  
+                }
+
+                @include md{
+                    font-size: 1.5rem;
+                }
+
+            }
+            span{
+                font-size: 1.25rem;
+                font-weight: 300;
+                @include md{
+                    font-size: 1.15rem;
+                }
+                @include sm{
+                    text-align: center;
+                }
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 300;
+                @include md{
+                    font-size: 1.15rem;
+                } 
+                @include sm{
+                    text-align: center;
+                }  
+            }
+            flex: 1;
+        }
+    }
+
+    .contactFormContainer{
+        padding: 5rem 12rem;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 2rem;
+        @include xxl{
+            padding: 5rem 6rem;
+            gap: 1rem;
+           
+        }
+        @include xl{
+            padding: 5rem 4rem;
+            gap: 1rem;
+           
+        }
+        @include md{
+            padding: 5rem 2rem; 
+        }
+        @include sm{
+         flex-direction: column;
+         padding: 1rem; 
+        }
+       .formContainer{
+        flex: 3;
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+          
+          input[type=submit] {
+            background-color: #051cc8;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #e90404;
+          }
+          
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+       }
+
+       .mapContainer{
+        flex: 2;
+        iframe{
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 1rem;
+        }
+       }
+
+    }
+   
+}

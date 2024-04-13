@@ -1,0 +1,170 @@
+@import '../../responsive.scss';
+
+.projekteContainer{
+    .projectHeader{
+
+        h2{
+          text-align: center;
+          padding: 2.5rem 0;
+          font-size: 2.5rem;
+          background-color: #00000019;
+          @include xxl{
+            font-size: 2rem;
+          }
+          @include xl{
+            font-size: 1.5rem;
+          }
+          @include lg{
+            font-size: 1.25rem;
+          }
+          @include md{
+            font-size: 1rem;
+            padding: 1rem;
+          }
+        }
+      }
+    .topBanner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      img{
+          height: 20rem;
+          width: 100%;
+          object-fit: cover;
+          object-position: 60% 32%;
+          @include sm{
+            height: 15rem;
+            width: 100%;
+            object-position: 60% 15%;
+          }
+      }
+      .bannerImage{
+          background: rgb(3,13,88);
+          background: linear-gradient(90deg, rgba(3,13,88,0.7287115529805672) 0%, rgba(1,10,84,0.695098107602416) 55%, rgba(159,0,0,0.19089642693014708) 100%);
+          z-index: 10;
+          height: 20rem;
+          width: 100%;
+          position: absolute;
+        top: 0%;
+        color: #fff;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include sm{
+          height: 15rem;
+          width: 100%;
+        }
+        h1{
+          position: relative;
+          top: 3rem;
+          font-size: 3rem;
+          text-transform: uppercase;
+          @include sm{
+            font-size: 1.5rem;
+          }
+      
+        }
+      }
+    }
+
+    .projectContentContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5rem 5rem ;
+        @include xl{
+          
+            padding: 2.5rem 2.5rem ;
+        }
+        @include lg{
+          
+            padding: 2.5rem 2rem ;
+        }
+        @include md{
+          
+            margin-top: 5rem;
+        }
+        @include sm{
+           flex-direction: column;
+           gap: 2rem;
+           margin-top: 0;
+           padding: 2.5rem 1rem ;
+          }
+        .left{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            h1{
+                font-size: 4rem;
+                padding-right: 4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                @include xxl{
+                    font-size: 3rem;
+                }
+                @include xl{
+                    font-size: 2rem;
+                    padding-right: 2rem;  
+                }
+                @include lg{
+                    flex-direction: column-reverse;
+                  }
+                b{
+                    font-size: 9vw;
+                    text-align: center;
+                    font-weight: bolder;
+                    background-image: url(../../assets/images/projekt.jpg);
+                    background-size: cover;
+                    background-clip: text ;
+                    // -webkit-background-clip: text;
+                    background-position: 15% 10%;
+                    color: rgba(0, 0, 0, 0.471);
+                    background-color: blue;
+                    border-color: rgb(0, 0, 0);
+                    @include xxl{
+                        font-size: 7vw;
+                    }
+                    @include lg{
+                        font-size: 12vw;
+                    }
+                    @include sm{
+                        font-size: 15vw;
+                    }
+  
+                    
+                }
+            }
+
+        }
+        .right{
+            flex: 4;
+            p{
+                font-size: 1.5rem;
+                line-height: 2.25rem;
+                color: #3d3d3d;
+                @include xxl{
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                }
+                @include xl{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                @include lg{
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+                @include sm{
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

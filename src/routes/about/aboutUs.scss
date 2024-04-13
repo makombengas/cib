@@ -1,0 +1,305 @@
+@import "../../responsive.scss";
+
+.aboutUsContainer{
+    position: relative;
+    width: 100%;
+   
+   
+    .aboutHeader{
+
+      h2{
+        text-align: center;
+        padding: 2.5rem 0;
+        font-size: 2.5rem;
+        background-color: #e9040419;
+        @include xxl{
+          font-size: 2rem;
+        }
+        @include xl{
+          font-size: 1.5rem;
+        }
+        @include lg{
+          font-size: 1.25rem;
+        }
+        @include md{
+          font-size: 1rem;
+          padding: 1rem;
+        }
+      }
+    }
+  .topBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        object-position: 60% 32%;
+        @include sm{
+          height: 15rem;
+          width: 100%;
+          object-position: 60% 15%;
+        }
+    }
+    .bannerImage{
+        background: rgb(3,13,88);
+        background: linear-gradient(90deg, rgba(3,13,88,0.7287115529805672) 0%, rgba(1,10,84,0.695098107602416) 55%, rgba(159,0,0,0.19089642693014708) 100%);
+        z-index: 10;
+        height: 20rem;
+        width: 100%;
+        position: absolute;
+      top: 0%;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include sm{
+        height: 15rem;
+        width: 100%;
+      }
+      h1{
+        position: relative;
+        top: 3rem;
+        font-size: 3rem;
+        text-transform: uppercase;
+        @include sm{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+   
+  .contentContainer{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    @include md{           
+     flex-direction: column;
+    
+    }
+
+    .left{
+      flex: 2;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      @include md{           
+        justify-content: center;
+       }
+      img{
+          width: 90%;
+          height: 50rem;
+          object-fit: cover;
+          @include lg{
+            height: 70rem;
+          }
+          @include md{
+            width: 100%;
+            height: 20rem;
+          }
+      }
+      .textIcon{
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        font-size: 6rem;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        color: #fff;
+        background: rgb(5,28,200);
+        background: linear-gradient(90deg, rgba(1, 5, 35, 0.359) 0%, rgba(0, 0, 0, 0.628) 55%, rgba(0, 5, 42, 0.359) 100%);
+        width: 90%;
+        height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .aboutVideoPlay{
+          cursor: pointer;
+
+        }
+        @include lg{
+          height: 70rem;
+        }
+        @include md{
+          width: 100%;
+          height: 20rem;
+          left: 50%;
+          font-size: 2.5rem;
+        }
+
+      }
+     }
+  
+     .right{
+      flex: 2;
+      .rightOne{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0 2rem 0rem 0;
+        flex-direction: column;
+        @include md{
+          padding:2rem;
+        }
+        @include sm{
+          padding:1rem;
+        }
+        h1{
+          font-size: 2rem;
+
+          @include xxl{
+            font-size: 1.5rem;
+          }
+          @include xl{
+            font-size: 1.25rem;
+          }
+          @include lg{
+            font-size: 1.15rem;
+          }
+          @include md{
+            font-size: 1rem;
+            padding: 1rem;
+            text-align: center;
+            padding: 1rem;
+          }
+        }
+
+        p{
+          font-size: 1.25rem;
+          color: #353535;
+          font-weight: 400;
+          line-height: 1.25;
+          @include xxl{
+            font-size: 1.15rem;
+          }
+          @include xl{
+            font-size: 1rem;
+          }
+          @include lg{
+            font-size: .92rem;
+          }
+          @include md{
+            font-size: 1.15rem;
+            padding: 1rem;
+          }
+          @include sm{
+            font-size: 1rem;
+          }
+        }
+
+        h3{
+          @include md{
+           text-align: center;
+           font-size: .95rem;
+          }
+        }
+        .checkContent{
+          display: flex;
+          flex-direction: column;
+          gap: .5rem;
+          @include md{
+            justify-content: center;
+           }
+          ul{
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            list-style-type: none;
+            @include md{
+              gap: 0rem;
+             }
+            li{
+              font-weight: 600;
+          
+              @include xxl{
+                font-size: 1rem;
+              }
+              @include xl{
+                font-size: .75rem;
+              }
+              @include lg{
+                font-size: .75rem;
+              }
+              @include md{
+                font-size: .15rem;
+                padding: .25rem;
+                font-weight: 400;
+              }
+            }
+            span{
+              color: #e90404;
+              font-size: 2rem;
+              font-weight: bolder;
+              @include xxl{
+                font-size: 1.5rem;
+              }
+              @include xl{
+                font-size: 1.25rem;
+              }
+              @include lg{
+                font-size: 1.15rem;
+              }
+              @include md{
+                font-size: 1.5rem;
+                padding: 1rem;
+              }
+            }
+            li{
+              font-size: 1.25rem;
+              font-weight: 400;
+              @include xl{
+                font-size: 1.15rem;
+                font-weight: 400;
+               
+              }
+              @include md{
+                font-size: 1rem;
+               
+              }
+            }
+           }
+        }
+      }
+     }
+  }
+
+  .videoBanner{
+    background-color: #000000fb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    span{
+      position: fixed;
+      top: 25%;
+      left: 80%;
+      font-size: 2rem;
+      cursor: pointer;
+      @include sm{
+        top: 20%;
+      left: 85%;
+      }
+    }
+    section{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      iframe{
+        @include sm{
+          width: 120%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,600 @@
+@import "../../responsive.scss";
+
+.allNavContainer{
+  position: fixed;
+  transition: all .5s linear;
+  background-color: #fff;
+  z-index: 4000;
+  width: 100%;
+  .closeTopNavContainer{
+    display: none;
+   }
+
+    .topNavContainer{
+      background-color: #1a1e38;
+      z-index: 6000;
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    color: #dfdfdf;
+    @include sm{
+      display: none;
+    }
+    .linkMenu{
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include xxl{
+        font-size: .75rem;
+      }
+      @include xl{
+        font-size: .55rem;
+        gap: .5rem;
+      }
+      @include md{
+        font-size: .50rem;
+        gap: .25rem;
+      }
+    }
+    .rightMenu{
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include xl{
+        gap: .5rem;
+      }
+      a{
+        color: #000000;
+        font-size: 1rem;
+        @include xxl{
+          font-size: .75rem;
+        }
+          @include xl{
+          font-size: .55rem;
+        }
+
+        @include md{
+          font-size: .50rem;
+        }
+      }
+    }
+    }
+
+  .navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 1rem;
+   transition: all 1s ease-in-out;
+    background-color: #fff;
+    z-index: 4000;
+    width: 100%;
+    ;
+    top: 0;
+    // border-bottom: .15rem dotted #e90404;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    @include sm{
+        background-color: #fff;
+       
+
+      }
+    
+    
+    .logoNav{
+        flex: 1;
+       
+        h1{
+            display: flex;
+            align-items: center;
+            font-size: 3rem;
+            color: #051cc8;
+            b{
+                font-size: 2.8rem;
+                color: #e90404;
+                font-weight: 600;
+            }
+        }
+        span{
+            color:#000000;
+           
+            @include xl{
+                font-size: .75rem;
+            }
+            @include lg{
+                font-size: .55rem;
+            }
+            @include md{
+                font-size: .45rem;
+              }
+              @include sm{
+                color: #000000;
+                z-index: 1500;
+              }
+        }
+       
+    }
+    .navMenu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        flex: 4;
+       z-index: 2000;
+      
+        @include md{
+            font-size: .25rem;
+          }
+
+         
+
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color:  #000000;
+            font-weight: 500;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            &:hover{
+                border-bottom: 2px solid #051cc8;
+              
+                
+            }
+           @include xl{
+             font-size: 1.15rem;
+           }
+           @include lg{
+            font-size: .85rem;
+          }
+          @include md{
+            font-size: .7rem;
+          }
+          @include sm{
+            color: #000000;
+          }
+        }
+
+        @include sm{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding: 12rem 0;
+            background-color: #fff;
+            height: 100vh;
+           display: flex;
+           position: fixed;
+           top: 50vh;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           margin: 0;
+           z-index: -1;
+          
+          
+            a{
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+          }
+    }
+
+    .menuNav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        flex: 4;
+       z-index: 2000;
+        
+       @include sm{
+       display: none;
+      }
+        @include md{
+            font-size: .25rem;
+          }
+
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 500;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            &:hover{
+              border-bottom: 2px solid #051cc8;
+            
+              
+          }
+           @include xl{
+             font-size: 1.15rem;
+           }
+           @include lg{
+            font-size: .85rem;
+          }
+          @include md{
+            font-size: .7rem;
+          }
+          @include sm{
+            color: #000000;
+          }
+        }
+
+        @include sm{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding: 12rem 0;
+            background-color: #fff;
+            height: 100vh;
+           display: flex;
+           position: fixed;
+           top: 50vh;
+           left: 49.99%;
+           transform: translate(-50%, -50%);
+           margin: 0;
+           z-index: -1;
+           transition: all 1s linear;
+           transform: rotate(45deg);
+            a{
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+          }
+          @include sm{
+           display: none;
+            
+        }
+    }
+
+   .hamburgerMenu{
+       display: none;
+       @include sm{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+    }
+    cursor: pointer;
+    hr{
+        width: 2.5rem;
+        padding: .08rem 0;
+        background-color: #000000;
+        border: none;
+        transition: all .25s linear;
+       
+     
+        &.lineOne{
+           transform: rotate(-45deg);
+           transition: all .5s linear;
+       }
+       &.lineTwo{
+           opacity: 0;
+           transition: all .5s linear;
+           transform: rotate(45deg);
+       }
+       &.lineThree{
+           transform: rotate(45deg);
+           position: absolute;
+           transition: all .5s linear;
+       }
+    }
+   }
+
+}
+}
+
+
+
+
+
+ //NavBar transparent
+
+
+ .transparentNavContainer{
+  position: fixed;
+  
+  background-color: #fff;
+  z-index: 4000;
+  width: 100%;
+  .closeTopNavContainer{
+    display: none;
+   }
+
+    .topNavContainer{
+      background-color: #1a1e38;
+      z-index: 6000;
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .55rem 1.5rem;
+    color: #eeeef0;
+    @include sm{
+      display: none;
+    }
+    .linkMenu{
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include xxl{
+        font-size: .75rem;
+      }
+      @include xl{
+        font-size: .55rem;
+        gap: .5rem;
+      }
+      @include md{
+        font-size: .50rem;
+        gap: .25rem;
+      }
+    }
+    .rightMenu{
+      font-size: .85rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      @include xl{
+        gap: .5rem;
+      }
+      a{
+        color: #eeeef0;
+        font-size: 1rem;
+        @include xxl{
+          font-size: .75rem;
+        }
+          @include xl{
+          font-size: .55rem;
+        }
+
+        @include md{
+          font-size: .50rem;
+        }
+      }
+    }
+    }
+
+  .navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem 1rem;
+   
+    background-color: transparent;
+    z-index: 4000;
+    width: 100%;
+    ;
+    top: 0;
+    // border-bottom: .15rem dotted #e90404;
+   
+    @include sm{
+        background-color: #fff;
+       
+
+      }
+    
+    
+    .logoNav{
+        flex: 1;
+       
+       
+        h1{
+            display: flex;
+            align-items: center;
+            font-size: 3rem;
+            color: #051cc8;
+            border-radius: .25rem;
+            @include sm{
+              background-color: transparent;
+              justify-content: start;
+            }
+            b{
+                font-size: 2.8rem;
+                color: #e90404;
+                font-weight: 600;
+            }
+        }
+        span{
+            color:#000000;
+           
+            @include xl{
+                font-size: .75rem;
+            }
+            @include lg{
+                font-size: .55rem;
+            }
+            @include md{
+                font-size: .45rem;
+              }
+            @include sm{
+                color: #000000;
+                z-index: 1500;
+            }
+        }
+       
+    }
+    .navMenu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        flex: 4;
+       z-index: 2000;
+
+      
+        @include md{
+            font-size: .25rem;
+          }
+
+         
+
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color:  #000000;
+            font-weight: 500;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            &:hover{
+                border-bottom: 2px solid #e90404;
+              
+                
+            }
+           @include xl{
+             font-size: 1.15rem;
+           }
+           @include lg{
+            font-size: .85rem;
+          }
+          @include md{
+            font-size: .7rem;
+          }
+          @include sm{
+            color: #000000;
+          }
+        }
+
+        @include sm{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding: 12rem 0;
+            background-color: #fff;
+            height: 100vh;
+           display: flex;
+           position: fixed;
+           top: 50vh;
+           left: 49.99%;
+           transform: translate(-50%, -50%);
+           margin: 0;
+           z-index: -1;
+          
+          
+            a{
+                color: #000000;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+          }
+    }
+
+    .menuNav{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: .5rem;
+        flex: 4;
+       z-index: 2000;
+        
+       @include sm{
+       display: none;
+      }
+        @include md{
+            font-size: .25rem;
+          }
+
+        a{
+            text-decoration: none;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            color: #000000;
+            font-weight: 500;
+            padding: .25rem .5rem;
+            border-radius: .25rem;
+            &:hover{
+              border-bottom: 2px solid #e90404;
+            
+              
+          }
+           @include xl{
+             font-size: 1.15rem;
+           }
+           @include lg{
+            font-size: .85rem;
+          }
+          @include md{
+            font-size: .7rem;
+          }
+          @include sm{
+            color: #000000;
+          }
+        }
+
+        @include sm{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding: 12rem 0;
+            background-color: #fff;
+            height: 100vh;
+           display: flex;
+           position: fixed;
+           top: 50vh;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           margin: 0;
+           z-index: -1;
+           transition: all 1s linear;
+           transform: rotate(45deg);
+            a{
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 1.25rem;
+            }
+          }
+          @include sm{
+           display: none;
+            
+        }
+    }
+
+   .hamburgerMenu{
+       display: none;
+       @include sm{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+    }
+    cursor: pointer;
+    hr{
+        width: 2.5rem;
+        padding: .08rem 0;
+        background-color: #000000;
+        border: none;
+        transition: all .25s linear;
+       
+     
+        &.lineOne{
+           transform: rotate(-45deg);
+           transition: all .5s linear;
+       }
+       &.lineTwo{
+           opacity: 0;
+           transition: all .5s linear;
+           transform: rotate(45deg);
+       }
+       &.lineThree{
+           transform: rotate(45deg);
+           position: absolute;
+           transition: all .5s linear;
+       }
+    }
+   }
+
+}
+}
+

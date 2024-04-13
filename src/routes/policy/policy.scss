@@ -1,0 +1,143 @@
+@import '../../responsive.scss';
+.policyContainer{
+    .topBanner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 35%;
+            @include sm{
+              height: 15rem;
+              width: 100%;
+              object-position: 10% -100%;
+            }
+        }
+        .bannerImage{
+            background: rgb(3,13,88);
+            background: linear-gradient(90deg, rgba(3,13,88,0.7287115529805672) 0%, rgba(1,10,84,0.695098107602416) 55%, rgba(159,0,0,0.19089642693014708) 100%);
+            z-index: 10;
+            height: 20rem;
+            width: 100%;
+            position: absolute;
+          top: 0%;
+          color: #fff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include sm{
+            height: 15rem;
+            width: 100%;
+          }
+  
+          h1{
+              position: relative;
+              top: 3rem;
+              font-size: 3rem;
+              text-transform: uppercase;
+              text-align: center;
+              @include sm{
+                font-size: 1.5rem;
+              }
+          
+            }
+       
+        }
+      }
+      .policyContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 12rem;
+        @include xxl{
+            padding: 0rem 2rem;
+        }
+        @include xl{
+            padding:2rem;
+        }
+        @include md{
+            padding: 2rem 0rem;
+        }
+       
+        
+        .topContent{
+            display: flex;
+            flex-direction: column;
+          
+            gap: 2rem;
+            @include md{
+               padding: 0 2rem;
+             }
+             @include sm{
+              justify-content: center;
+              padding: 0 1rem;
+             }
+          
+             span{
+                font-size: 1.5rem;
+                @include xl{
+                    font-size: 1.25rem;
+                }
+                @include md{
+                    font-size: 1.15rem;
+                }
+            }
+       
+           p{
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                font-weight: 300;
+                @include xl{
+                    font-size: 1.25rem;
+                }
+                @include md{
+                    font-size: 1.15rem;
+                }
+            }
+            a{
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                font-weight: 300;
+                @include xl{
+                    font-size: 1.25rem;
+                }
+                @include md{
+                    font-size: 1.15rem;
+                }
+            }
+            ul{
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+                padding-left: 1.5rem;
+                @include sm{
+                    gap: 2rem;
+                  
+                    flex-direction: column;
+                }
+                li{
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    list-style: decimal;
+                    @include xl{
+                        font-size: 1.4rem;
+                    }
+                    @include md{
+                        font-size: 1.25rem;
+                    }
+                    @include sm{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        
+      }
+}

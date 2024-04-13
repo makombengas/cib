@@ -1,0 +1,129 @@
+@import '../../responsive.scss';
+.notFoundContainer{
+
+   
+
+    .topBanner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        img{
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            object-position: 50% 24%;
+            @include sm{
+              height: 15rem;
+              width: 100%;
+              object-position: 10% 50%;
+            }
+        }
+        .bannerImage{
+            background: rgb(3,13,88);
+            background: linear-gradient(90deg, rgba(3,13,88,0.7287115529805672) 0%, rgba(1,10,84,0.695098107602416) 55%, rgba(159,0,0,0.19089642693014708) 100%);
+            z-index: 10;
+            height: 20rem;
+            width: 100%;
+            position: absolute;
+          top: 0%;
+          color: #fff;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include sm{
+            height: 15rem;
+            width: 100%;
+          }
+  
+          h1{
+              position: relative;
+              top: 3rem;
+              font-size: 3rem;
+              text-transform: uppercase;
+              text-align: center;
+              @include sm{
+                font-size: 1.5rem;
+              }
+          
+            }
+       
+        }
+      }
+
+
+      .notFoundContent{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10rem 1rem;
+        @include xl{
+            padding: 5rem 1rem;
+        }
+        @include sm{
+            padding: 2rem 1rem;
+        }
+
+          h1{
+              font-size: 3rem; 
+              
+              b{
+                  color: red;
+                  @include sm{
+                      font-size: 1.5rem;
+                  }
+              }
+              @include sm{
+                  font-size: 1.5rem;
+              }
+          }
+          h2{
+              @include sm{
+                  font-size: 1.25rem;
+                  text-align: center;
+              }
+          }
+          p{
+              font-size: 1.25rem;
+              @include xl{
+                text-align: center;
+            }
+              @include sm{
+                  font-size: 1rem;
+                  text-align: center;
+              }
+              b{
+                  font-size: 1.5rem;
+                  @include sm{
+                      font-size: 1.25rem;
+                  }
+              }
+              a{
+                  color: #000000;
+              }
+          }
+          button{
+              background: rgb(2,0,36);
+              background: linear-gradient(90deg, rgb(13, 2, 216) 0%, rgb(2, 66, 146) 46%, rgba(255,48,48,1) 100%);
+              color: #ffffff !important;
+              padding: .25rem .5rem;
+              border-radius: .5rem;
+              border: none;
+              cursor: pointer;
+              font-size: 1.75rem;
+              margin-top: 2rem;
+              @include sm{
+                  font-size: 1.5rem;
+              }
+              &:hover{    
+                  background: rgb(2,0,36);
+                  background: linear-gradient(90deg, rgba(255,48,48,1) 0%,  rgb(2, 66, 146) 46%, rgb(2, 66, 146) 100%, );
+                  transition: all .5s ease-in-out;           
+              }
+          }
+      }
+}
