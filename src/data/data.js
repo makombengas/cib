@@ -3,7 +3,8 @@ import market from '../assets/images/market.jpg';
 import projekt from '../assets/images/projekt.jpg';
 import job from '../assets/images/job.jpg';
 import together from '../assets/images/together.jpg';
-import { ProfilePictures, teamImage } from '../assets/images/carouselBannerImage';
+import { profilePictures, teamImage } from '../carouselBannerImage';
+
 
 export const navbarData =[
     {
@@ -89,35 +90,35 @@ export const sliderData =[
 export const testimonialData =[
     {
         id:1,
-        image: ProfilePictures.profileSix,
+        image: profilePictures.profileSix,
         name:"Arnold marchand",
         text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         city:"Oldenburg, Oldb"
     },
     {
         id:2,
-        image:ProfilePictures.profileTwo,
+        image:profilePictures.profileTwo,
         name:"Francoise leBlue",
         text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         city:"Wilhemshaven"
     },
     {
         id:3,
-        image:ProfilePictures.profileFour,
+        image:profilePictures.profileFour,
         name:"Christine fardo",
         text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         city:"Oldenburg, Oldb"
     },
     {
         id:4,
-        image:ProfilePictures.profileFive,
+        image:profilePictures.profileFive,
         name:"Richard le noir",
         text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         city:"Oldenburg, Oldb"
     },
     {
         id:5,
-        image:ProfilePictures.profileOne,
+        image:profilePictures.profileOne,
         name:"Gaston die neu",
         text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
         city:"Oldenburg, Oldb"
@@ -129,7 +130,7 @@ export const testimonialData =[
 export const teamData =[
     {
         id:1,
-        image:ProfilePictures.profileOne,
+        image:profilePictures.profileOne,
         name:"PAUL WALKER",
         position:"Chief Executive Officer",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",
@@ -150,7 +151,7 @@ export const teamData =[
     },
     {
         id:2,
-        image:ProfilePictures.profileFive,
+        image:profilePictures.profileFive,
         name:"JEANETTE KINGSTON",
         position:"Vice President",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",
@@ -171,7 +172,7 @@ export const teamData =[
     },
     {
         id:3,
-        image:ProfilePictures.profileTwo,
+        image:profilePictures.profileTwo,
         name:"JOHN SMITHY",
         position:"Social assistent",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",
@@ -192,7 +193,7 @@ export const teamData =[
     },
     {
         id:4,
-        image:ProfilePictures.profileFour,
+        image:profilePictures.profileFour,
         name:"LINDA KLOE",
         position:"Social assistent",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",
@@ -213,7 +214,7 @@ export const teamData =[
     },
     {
         id:5,
-        image:ProfilePictures.profileThree,
+        image:profilePictures.profileThree,
         name:"RICARDO GOMEZ",
         position:"Chief Technology Officer",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",
@@ -234,7 +235,7 @@ export const teamData =[
     },
     {
         id:6,
-        image:ProfilePictures.profileSix,
+        image:profilePictures.profileSix,
         name:"JAMES SMITH",
         position:"HR Manager",
         text:"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.",

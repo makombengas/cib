@@ -1,4 +1,5 @@
-import { logosSlider } from '../../assets/images/carouselBannerImage';
+
+import { logosSlider } from '../../carouselBannerImage';
 import './sponsor.scss';
 
 const Sponsor = () => {

@@ -1,7 +1,7 @@
 import  './contact.scss';
 import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+import { carouselBannerPictures } from '../../carouselBannerImage';
 const Contact = () => {
   return (
     <div className='contactContainer'>

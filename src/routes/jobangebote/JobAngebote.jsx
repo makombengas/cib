@@ -1,5 +1,6 @@
 
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+
+import { carouselBannerPictures } from '../../carouselBannerImage';
 import './jobAngebote.scss';
 
 const JobAngebote = () => {

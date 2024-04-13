@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+
 import './arbeitsJobBanner.scss';
+import { carouselBannerPictures } from '../../carouselBannerImage';
 
 const ArbeitsJobBanner = () => {
   return (

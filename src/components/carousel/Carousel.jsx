@@ -11,8 +11,9 @@ import './styles.scss';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { sliderData } from './../../data/data';
+
 import { Link } from 'react-router-dom';
+import { sliderData } from '../../data/data';
 
 
 const  Carousel = () => {

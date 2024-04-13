@@ -1,4 +1,5 @@
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+
+import { carouselBannerPictures } from '../../carouselBannerImage';
 import './weForYou.scss';
 
 const WeforYou = () => {

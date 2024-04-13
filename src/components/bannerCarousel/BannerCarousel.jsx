@@ -1,7 +1,8 @@
 import './bannerCarousel.scss';
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+
 import {useGSAP} from '@gsap/react';
 import gsap from 'gsap';
+import { carouselBannerPictures } from '../../carouselBannerImage';
 
 const BannerCarousel = () => {
     useGSAP(()=>{

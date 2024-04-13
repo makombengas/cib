@@ -1,4 +1,4 @@
-import { carouselBannerPictures } from '../../assets/images/carouselBannerImage';
+import { carouselBannerPictures } from '../../carouselBannerImage';
 import  './notFound.scss';
 import { Link } from 'react-router-dom';
 

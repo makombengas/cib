@@ -1,5 +1,5 @@
-import  './projekte.scss';
-import { carouselBannerPictures } from './../../assets/images/carouselBannerImage';
+import { carouselBannerPictures } from "../../carouselBannerImage"
+import "./projekte.scss";
 
 const Projekte = () => {
   return (

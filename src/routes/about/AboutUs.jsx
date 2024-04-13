@@ -1,7 +1,8 @@
 import './aboutUs.scss';
-import { carouselBannerPictures } from './../../assets/images/carouselBannerImage';
+
 import { FaPlay } from "react-icons/fa";
 import { useState } from 'react';
+import { carouselBannerPictures } from '../../carouselBannerImage';
 const AboutUs = () => {
     const [openVideo, setOpenVideo] = useState(false);
     const handleVideo =()=>{
