@@ -11,7 +11,7 @@ const ArbeitsJobBanner = () => {
                 <img src={carouselBannerPictures.worker} alt="worker.jpg" />
             <Link to="wir-fur-sie">
                 <div className="textContainer">
-                    <h2>Werkakademie „Work First</h2>
+                    <h2> Jobangebote in Stellenangebote</h2>
                 </div>
             </Link>
             </div>

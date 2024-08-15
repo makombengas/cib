@@ -3,7 +3,6 @@
     position: relative;
     width: 100%;
 
-
     .topBanner{
         display: flex;
         justify-content: center;
@@ -53,7 +52,7 @@
        display: grid;
        grid-template-columns: auto auto auto;
         gap: 1.5rem;
-        padding: 8rem 1rem 0 1rem;
+        padding: 8rem 1rem 8rem 1rem;
         @include xxl{
             padding: 2rem 1rem;
             grid-template-columns:  auto auto;

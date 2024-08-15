@@ -1,21 +1,21 @@
 import './bannerCarousel.scss';
 
-import {useGSAP} from '@gsap/react';
-import gsap from 'gsap';
+// import {useGSAP} from '@gsap/react';
+// import gsap from 'gsap';
+// gsap.registerPlugin();
 import { carouselBannerPictures } from '../../carouselBannerImage';
-
 const BannerCarousel = () => {
-    useGSAP(()=>{
-        gsap.from("#left", {
-            trigger:'#left', 
-            start:'20% top',
-            opacity:0,
-            y:-1.5,
-            duration:2,
-            ease:"power2.inOut",
-        })
+    // useGSAP(()=>{
+    //     gsap.from("#left", {
+    //         trigger:'#left', 
+    //         start:'20% top',
+    //         opacity:0,
+    //         y:-1.5,
+    //         duration:2,
+    //         ease:"power2.inOut",
+    //     })
 
-    },[])
+    // },[])
   return (
     <div className='bannerCarouselContainer' id='left'>
         <div className="sectionContainer">

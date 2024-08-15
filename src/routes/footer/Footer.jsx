@@ -1,13 +1,13 @@
 import './footer.scss';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Sponsor from './../../components/sponsor/Sponsor';
-import Team from '../team/Team';
+// import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+// import Sponsor from './../../components/sponsor/Sponsor';
+// import Team from '../team/Team';
 const Footer = () => {
   return (
     <div className='footerContainer'>
-       <Team/>
-       <Sponsor/>
+       {/* <Team/> */}
+       {/* <Sponsor/> */}
         <footer className="footer">
     <div className="waves">
       <div className="wave" id="wave1"></div>
@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
 
    
-    <ul className="social-icon">
+    {/* <ul className="social-icon">
       <li className="social-icon__item"><Link className="social-icon__link" to="#" target='blank'>
                 <FaFacebook />
         </Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
       <li className="social-icon__item"><Link className="social-icon__link" to="#" target='blank'>
                 <FaInstagram />
         </Link></li>
-    </ul>
+    </ul> */}
     <ul className="menu">
       <li className="menu__item"><Link className="menu__link" to="/">Home</Link></li>
       <li className="menu__item"><Link className="menu__link" to="uber-uns">Über uns</Link></li>
@@ -49,10 +49,17 @@ const Footer = () => {
       <li className="menu__item"><Link className="menu__link" to="kontakt">Kontakt</Link></li>
 
     </ul>
-    <p>&copy;2024 Bernard Ngassa | All Rights Reserved</p>
+  
   </footer>
 
-
+  <div className="footerLinkMenuContainer">
+        
+              <div className="rightMenu">
+                <Link to="datenschutzerklärung">Datenschutzerklärung</Link>
+                <Link to="/impressum">Impressum</Link>
+              </div>
+              <p> &copy;2024 CIB | All Rights Reserved</p>
+            </div>
    
     </div>
   )

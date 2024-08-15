@@ -1,25 +1,25 @@
 import './aboutUsHome.scss';
 import integration from '../../../assets/images/integration.jpg';
 import {Link} from "react-router-dom";
-import {gsap} from "gsap";
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger) 
+// import {gsap} from "gsap";
+// import { useGSAP } from '@gsap/react';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// gsap.registerPlugin(ScrollTrigger) 
 const AboutUsHome = () => {
-  useGSAP(()=>{
-    gsap.from("#willkomen", {
-      ScrollTrigger:{
-        trigger: "#willkomen",
-        toggleActions:"restart pause reverse pause",
-        start:'10% left',
-      }, 
-        opacity:0,
-        x: -200,
-        duration:2,
-        ease:"power2.inOut",
-    })
+//   useGSAP(()=>{
+//     gsap.from("#willkomen", {
+//       ScrollTrigger:{
+//         trigger: "#willkomen",
+//         toggleActions:"restart pause reverse pause",
+//         start:'10% left',
+//       }, 
+//         opacity:0,
+//         x: -200,
+//         duration:2,
+//         ease:"power2.inOut",
+//     })
 
-},[])
+// },[])
   return (
     <div className="aboutUsHomeContainer">
         <div className="left" id='willkomen'>

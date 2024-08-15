@@ -25,7 +25,7 @@ const Navbar = () => {
   },[])
   return (
     <div className={scrollTopMenu ? "transparentNavContainer":"allNavContainer"}>
-          { scrollTopMenu && <div className= "topNavContainer">
+          {/* { scrollTopMenu && <div className= "topNavContainer">
               <div className="linkMenu">
                 <span>Langenhof 1,
                       26160 Bad Zwischenahn
@@ -45,7 +45,7 @@ const Navbar = () => {
                 <Link to="datenschutzerklärung">Datenschutzerklärung</Link>
                 <Link to="/impressum">Impressum</Link>
               </div>
-            </div>}
+            </div>} */}
       <div className="navbarContainer"  >
       <Link onClick={()=>setOpenMenu(false)} to='/'>
             <div className="logoNav">

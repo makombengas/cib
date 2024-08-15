@@ -1,7 +1,7 @@
 import ArbeitsJobBanner from '../../components/arbeitsJob/ArbeitsJobBanner';
-import BannerCarousel from '../../components/bannerCarousel/BannerCarousel';
+// import BannerCarousel from '../../components/bannerCarousel/BannerCarousel';
 import Carousel from '../../components/carousel/Carousel';
-import Testimonial from '../../components/testimonial/Testimonial';
+// import Testimonial from '../../components/testimonial/Testimonial';
 import AboutUsHome from './aboutUsHome/AboutUsHome';
 
 import './home.scss';
@@ -10,12 +10,12 @@ const Home = () => {
   return (
     <div className='homeContainer'>
         <Carousel/>
-        <div className="carouselContainer">
+        {/* <div className="carouselContainer">
           <BannerCarousel/>
-       </div>
+       </div> */}
        <AboutUsHome/>
        <ArbeitsJobBanner/>
-       <Testimonial/>
+       {/* <Testimonial/> */}
     </div>
   )
 }

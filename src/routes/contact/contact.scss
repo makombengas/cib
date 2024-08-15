@@ -92,7 +92,7 @@ width: 100%;
             gap: 1rem;
             @include sm{
                align-items: center;
-               padding: 1rem;
+               padding: 1rem 0rem;
                }
 
             h2{
@@ -124,7 +124,7 @@ width: 100%;
             gap: 1rem;
             @include sm{
                 align-items: center;
-                padding: 1rem;
+                padding: 1rem 0rem;
             }
             
             h2{
@@ -167,7 +167,7 @@ width: 100%;
             gap: 1rem;
             @include sm{
                 align-items: center;
-                padding: 1rem;
+                padding: 1rem 0rem;
             }
             h2{
                 font-size: 2.5rem;

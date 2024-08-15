@@ -22,10 +22,10 @@ const  Carousel = () => {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 9500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 9500,
+        //   disableOnInteraction: false,
+        // }}
         pagination={{
           clickable: true,
         }}

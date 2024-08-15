@@ -1,13 +1,10 @@
 @import '../../responsive.scss';
 
-.footerContainer{
-
-    margin: 4rem 0;
-
-    .footer {
+.footerContainer{ 
+  .footer {
+      
         position: relative;
-        width: 100%;
-        background: #fff;
+
         min-height: 100px;
         padding: 20px 50px;
         display: flex;
@@ -171,5 +168,50 @@
           }
         }
       }
-
+.footerLinkMenuContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 2rem;
+  background-color: #0d0b23;
+  
+  .rightMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    @include sm{
+      gap: 2.5rem;
+    }
+ 
+    a{
+      color: #fff;
+      text-decoration: none;
+     
+      font-size: 1.25rem;
+      font-weight: 300;
+      @include lg{
+        font-size: 1.15rem;
+      }
+      @include sm{
+        font-size: 1rem;
+      }
+    }
+  }
+  p{
+    color: #fff;
+    letter-spacing: .25rem;
+    font-size: .8rem;
+    text-align: center;
+    @include lg{
+      font-size: .7rem;
+    }
+    @include sm{
+      font-size: .5rem;
+      padding: 0 1rem;
+    }
+  }
+}
 }

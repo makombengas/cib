@@ -51,8 +51,8 @@ export const sliderData =[
     {
         id:1,
         image:market,
-        text:"Zwei Grundsätze prägen die Identität des CIB e. V.",
-        subText:"Unsere besondere Arbeitsmarktnähe und unser Selbstverständnis als kundenorientiertes Dienstleistungsunternehmen.",
+        text:"Herzlich willkommen bei dem Centrum für Qualifizierung im Ammerland",
+        subText:"Ihrem kompetenten Bildungsträger!      Das Centrum für Integration und Bildung e.V, ist ein nach AZAV zertifizierter Bildungsträger",
         readLink:"uber-uns"
     },
     {
