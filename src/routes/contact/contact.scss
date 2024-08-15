@@ -52,12 +52,12 @@ width: 100%;
       }
 
     .topContact{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display:grid;
+        grid-template-columns: auto auto auto;
         padding: 5rem 12rem;
-        gap: 2rem;
-        flex-wrap: wrap;
+        gap: 4rem;
+       
+     
         width: 100%;
         @include xxl{
             padding: 5rem 6rem;
@@ -67,13 +67,13 @@ width: 100%;
         @include xl{
             padding: 5rem 4rem;
             gap: 1rem;
-           
+            grid-template-columns: auto auto;  ;
         }
         @include md{
             padding: 5rem 2rem; 
         }
         @include sm{
-         flex-direction: column;
+            grid-template-columns: auto ;
          padding: 2rem; 
         }
         .contactIcon{
@@ -85,9 +85,9 @@ width: 100%;
           
         }
         .phone{
-            flex: 1;
+           height: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             flex-direction: column;
             gap: 1rem;
             @include sm{
@@ -118,10 +118,14 @@ width: 100%;
             }
         }
         .email{
-            flex: 1;
+           
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            @include xl{
+               
+                grid-column: 1 / -1;
+            }
             @include sm{
                 align-items: center;
                 padding: 1rem 0rem;
@@ -200,7 +204,7 @@ width: 100%;
                     text-align: center;
                 }  
             }
-            flex: 1;
+          
         }
     }
 
@@ -225,7 +229,7 @@ width: 100%;
         }
         @include sm{
          flex-direction: column;
-         padding: 1rem; 
+         padding: 8rem 1rem; 
         }
        .formContainer{
         flex: 3;

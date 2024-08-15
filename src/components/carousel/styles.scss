@@ -33,8 +33,8 @@
                 }
                 
             }
-            width: 100%;
-            height: 50%;
+           
+           
             .textContainer{
                 z-index: 1;
                 width: 100vw;
@@ -80,7 +80,7 @@
                         font-size: 1rem;
                         margin-top: 1rem;
                     }
-                    transition: background-color .5s linear;
+                   
                     &:hover{
                         background-color: #e90404;
                     }
