@@ -1,13 +1,13 @@
 import './aboutUs.scss';
 
-import { FaPlay } from "react-icons/fa";
+// import { FaPlay } from "react-icons/fa";
 import { useState } from 'react';
 import { carouselBannerPictures } from '../../carouselBannerImage';
 const AboutUs = () => {
     const [openVideo, setOpenVideo] = useState(false);
-    const handleVideo =()=>{
-        setOpenVideo(true);
-    }
+    // const handleVideo =()=>{
+    //     setOpenVideo(true);
+    // }
   return (
     <div className='aboutUsContainer'>
         <div className="topBanner">
@@ -24,9 +24,9 @@ const AboutUs = () => {
         <div className="contentContainer">
         <div className="left">
              <img src={carouselBannerPictures.aboutUs} alt="" />
-             <div className="textIcon">
+             {/* <div className="textIcon">
                 <FaPlay onClick={handleVideo} className='aboutVideoPlay' />
-             </div>
+             </div> */}
         </div>
         
         <div className="right">

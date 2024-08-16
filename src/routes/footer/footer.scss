@@ -181,9 +181,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 5rem;
     @include sm{
-      gap: 2.5rem;
+      gap: 1rem;
     }
  
     a{

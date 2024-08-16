@@ -167,7 +167,7 @@
 
         @include sm{
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             gap: 1.5rem;
             width: 100%;
@@ -268,12 +268,12 @@
        @include sm{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: .4rem;
         
     }
   
     hr{
-        width: 2.5rem;
+        width: 2rem;
         padding: .08rem 0;
         background-color: #000000;
         border: none;
@@ -580,12 +580,12 @@
        @include sm{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: .4rem;
         
     }
    
     hr{
-        width: 2.5rem;
+        width: 2rem;
         padding: .08rem 0;
         background-color: #000000;
         border: none;

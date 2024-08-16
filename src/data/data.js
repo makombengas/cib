@@ -15,7 +15,7 @@ export const navbarData =[
     },
     {
         id:2,
-        name:"Über-uns",
+        name:"Über uns",
         link:"/uber-uns"
 
     },
